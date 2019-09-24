@@ -1,0 +1,68 @@
+*:focus{
+    outline:none
+}
+
+QDialog{
+    background-color: rgb(191, 255, 191);
+}
+
+QLabel{
+    color: rgb(63, 63, 63);
+    font: 25 20pt "Calibri Light";
+}
+
+QTableWidget{
+	border-style:none;
+	padding:6px;
+	border-radius:5px;
+	font: 11pt "幼圆";
+	color: rgb(0, 0, 0);
+}
+QTableWidget:focus{
+    border:2px solid #E74C3C;
+}
+
+QTableWidget::item{
+	padding-top:10px;
+	padding-bottom:4px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #4BABDA, stop: 1.0 #76D7FA);
+
+}
+QTableWidget::item:hover{
+	show-decoration-selected:5;
+	background-color: rgb(170, 170, 255);
+}
+
+QTableWidget::item:selected{
+	padding:0px;
+    margin:0px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #6A848C,  stop: 1.0 #0F9EAF);
+}
+
+QPushButton{
+	background-color:#444444;
+	border:none;
+	border-radius:5px;
+    font: 75 12pt "Leelawadee UI";
+
+}
+
+QPushButton:hover{
+	background-color:#888888;
+}
+
+QPushButton:pressed{
+	background-color:#DDDDDD;
+}
+
+QPlainTextEdit{
+    font: 14pt "华文楷体";
+	border-style:none;
+	padding:6px;
+	border-radius:5px;
+	border:2px solid #DCE4EC;
+}
+
+QPlainTextEdit:focus{
+	border:2px solid #E74C3C;
+}

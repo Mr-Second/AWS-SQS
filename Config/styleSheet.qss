@@ -1,0 +1,83 @@
+*:focus{
+    outline:none
+}
+
+#MyWidget{
+	border-image: url(:/background.png);
+}
+
+QLabel{
+    color: #FF5511;
+	font: 75 12pt "Leelawadee UI";
+	border:none;
+}
+
+QLineEdit{
+	border-style:none;
+	background-color:rgba(0,0,0,0);
+	padding:6px;
+	border:2px solid;
+	border-top-color:rgba(0,0,0,0);
+	border-left-color:rgba(0,0,0,0);
+	border-right-color:rgba(0,0,0,0);
+    border-bottom-color:#DCE4EC;
+    font: 14pt "幼圆";
+    color:rgb(168,139,99)
+}
+
+QLineEdit:hover{
+    border-bottom-color:#FF7744
+}
+
+QLineEdit:focus{
+	border-bottom-color:#FF5511
+}
+
+#connectBtn{
+	background-color:#444444;
+	border:none;
+	border-radius:5px;
+    font: 75 12pt "Leelawadee UI";
+
+}
+
+#connectBtn:hover{
+	background-color:#888888;
+}
+
+#connectBtn:pressed{
+	background-color:#DDDDDD;
+}
+
+#close_Btn{
+	background-color: rgba(255, 255, 255, 0);
+	border:none;
+	color:white
+}
+
+#close_Btn:hover{
+	background-color: 	#FF0000;
+}
+
+#close_Btn:pressed{
+	background-color: #AA0000
+}
+
+QCheckBox {
+	border:none;
+    background-color: rgb(130, 130, 130);
+	font: 11pt "Cambria";
+}
+
+QCheckBox::indicator {
+	 width: 20px;
+	 height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+	 image: url(:/uncheck.png);
+}
+
+QCheckBox::indicator:checked {
+	 image: url(:/check.png);
+}

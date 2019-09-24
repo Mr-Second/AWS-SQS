@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>634</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>39</y>
+     <width>401</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <column>
+    <property name="text">
+     <string>Order</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>SenderId</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Messages</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string/>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="StartBtn">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>310</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TopLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>0</y>
+     <width>401</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Recieve Messages</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CloseBtn">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>310</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>320</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Remember</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>33</y>
+     <width>100</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLabel" name="waitTimeLabel">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>wait_time</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="msgNumsLabel">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>num_msgs</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="QueueUrlLabel">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>queue_url</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="regionLabel">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>region</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="visibilityTimeLabel">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>visibility_time</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QSplitter" name="splitter_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>39</y>
+     <width>100</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLineEdit" name="waitTime_Input">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="msgNums_Input">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="QueueUrl_Input">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="region_Input">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="visibilityTime_Input">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../resources/images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>waitTime_Input</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setSendBtnEnble()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>QueueUrl_Input</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setSendBtnEnble()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>msgNums_Input</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setSendBtnEnble()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>region_Input</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setSendBtnEnble()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>visibilityTime_Input</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>setSendBtnEnble()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>633</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>StartBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>startEvent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CloseBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>closeEvent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>592</x>
+     <y>343</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>633</x>
+     <y>350</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>setRemember()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>16</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setSendBtnEnble()</slot>
+  <slot>startEvent()</slot>
+  <slot>closeEvent()</slot>
+  <slot>setRemember()</slot>
+ </slots>
+</ui>
